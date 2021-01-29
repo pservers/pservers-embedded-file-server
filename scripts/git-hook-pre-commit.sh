@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FILES=""
-FILES="${FILES} $(find ./file -name '*.py' | tr '\n' ' ')"
+FILES="${FILES} $(keeley ./file -name '*.py' | tr '\n' ' ')"
 ERRFLAG=0
 
 OUTPUT=`pyflakes ${FILES} 2>&1`
